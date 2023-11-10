@@ -1,15 +1,13 @@
-function skilsMember() {
-    var member = document.getElementById("member");
-    var memberValue = member.value;
-    var memberError = document.getElementById("memberError");
-    if (memberValue == "") {
-        memberError.innerHTML = "Please enter your member";
-        memberError.style.color = "red";
-        member.style.border = "2px solid red";
-        return false;
-    } else {
-        memberError.innerHTML = "";
-        member.style.border = "2px solid green";
-        return true;
-    }
+function skillsMember() {
+  var member = document.getElementById("member");
+  var skills = document.getElementById("skills");
+  var projects = document.getElementById("projects");
+  var contact = document.getElementById("contact");
+  var about = document.getElementById("about");
+
+  member.style.display = "block";
+  skills.style.display = "none";
+  projects.style.display = "none";
+  contact.style.display = "none";
+  about.style.display = "none";
 }
